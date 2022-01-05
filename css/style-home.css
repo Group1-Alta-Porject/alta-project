@@ -18,7 +18,7 @@
    color: var(--primary-text);
    background-color: var(--secondary-color);
 }
-.heros-content-head h5 {
+.heros-content-head > h5 {
    font-size: 25px;
    margin-bottom: 0px;
    font-family: var(--font-header);
@@ -29,7 +29,7 @@
    line-height: 24px;
    font-weight: var(--font-header-semibold);
 }
-.heros-content-head h1 {
+.heros-content-head > h1 {
    font-size: 45px;
    font-family: var(--font-second-header);
    font-weight: var(--font-header-extrabold);
@@ -413,7 +413,7 @@
 
 @media screen and (max-width: 500px) {
    .heros {
-      height: 90vh;
+      height: 100vh;
    }
    .tab:nth-child(n + 2) {
       border-left: none;
@@ -448,5 +448,10 @@
    }
    .cards {
       margin: 0px;
+   }
+}
+@media screen and (max-width: 400px) {
+   .heros {
+      height: 90vh;
    }
 }
