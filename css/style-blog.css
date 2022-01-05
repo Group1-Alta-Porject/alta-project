@@ -1,0 +1,132 @@
+:root {
+   --primary-color: #f47522;
+   --secondary-color: #edf6ff;
+   --primary-text: #19345e;
+   --devider-color: #aaaaaa;
+   --font-header: muli, sans-serif;
+   --font-second-header: "Roboto", sans-serif;
+   --font-tertier: "Poppins", sans-serif;
+   --font-header-semibold: 600;
+   --font-header-bold: 700;
+   --font-header-extrabold: 800;
+   --font-header-black: 900;
+}
+.blog{
+   padding-bottom: 60px;
+}
+
+.blog-title-section {
+   margin: 80px auto 60px;
+   position: relative;
+   width: fit-content;
+}
+
+.blog-title-section::after,
+.blog-title-section::before {
+   position: absolute;
+   content: "";
+   height: 2px;
+   width: 35px;
+   background-color: var(--primary-color);
+}
+
+.blog-title-section::before {
+   transform-origin: center left;
+   left: -45px;
+   top: 45%;
+}
+.blog-title-section::after {
+   transform-origin: center right;
+   right: -45px;
+   top: 45%;
+}
+.blog-title-section h1 {
+   font-size: 45px;
+   color: var(--primary-text);
+   font-weight: var(--font-header-bold);
+   font-family: var(--font-header);
+}
+
+.blog-content{
+   padding: 30px 200px 0px;
+   color: var(--primary-text);
+}
+
+.blog-title{
+   margin-bottom: 32px;
+}
+.blog-title h1{
+   font-size: 50px;
+   font-family: var(--font-header);
+   font-weight: var(--font-header-extrabold);
+}
+
+.blog-info{
+   margin-bottom: 61px;
+}
+
+.blog-info h3{
+   font-size: 20px;
+   font-family: var(--font-header);
+   font-weight: var(--font-header-bold);
+}
+
+.blog-text p{
+   font-size: 15px;
+   font-family: var(--font-tertier);
+}
+
+
+@media screen and (max-width: 1200px) {
+   .blog-content{
+      padding: 30px 150px 0px;
+   }
+}
+@media screen and (max-width: 992px) {
+   .blog-title h1{
+      font-size: 40px;
+      font-family: var(--font-header);
+      font-weight: var(--font-header-extrabold);
+   }
+   .blog-info h3{
+      font-size: 16px;
+      font-family: var(--font-header);
+      font-weight: var(--font-header-bold);
+   }
+   .blog-text p{
+      font-size: 14px;
+      font-family: var(--font-tertier);
+   }
+   .blog-content{
+      padding: 30px 130px 0px;
+   }
+}
+@media screen and (max-width: 768px) {
+   .blog-content{
+      padding: 30px 40px 0px;
+   }
+   .blog-title{
+      margin-bottom: 25px;
+   }
+   .blog-info{
+      margin-bottom: 30px;
+   }
+   .blog-title h1{
+      font-size: 25px;
+      font-family: var(--font-header);
+      font-weight: var(--font-header-extrabold);
+   }
+   .blog-info h3{
+      font-size: 14px;
+      font-family: var(--font-header);
+      font-weight: var(--font-header-bold);
+   }
+   .blog-text p{
+      font-size: 13px;
+      font-family: var(--font-tertier);
+   }
+}
+
+@media screen and (max-width: 500px) {
+
+}
