@@ -14,7 +14,7 @@
 /* Hero */
 .heros {
    padding: 0px 140px;
-   height: 90vh;
+   min-height: 90vh;
    color: var(--primary-text);
    background-color: var(--secondary-color);
 }
@@ -412,9 +412,7 @@
 }
 
 @media screen and (max-width: 500px) {
-   .heros {
-      height: 100vh;
-   }
+
    .tab:nth-child(n + 2) {
       border-left: none;
    }
