@@ -8,25 +8,33 @@
    --font-tertier: "Poppins", sans-serif;
    --font-header-semibold: 600;
    --font-header-bold: 700;
+   --font-header-extrabold: 800;
    --font-header-black: 900;
 }
 /* Hero */
 .heros {
-   padding: 0px 160px;
+   padding: 0px 140px;
    height: 90vh;
    color: var(--primary-text);
    background-color: var(--secondary-color);
-   font-weight: var(--font-header-semibold);
 }
 .heros-content-head h5 {
+   font-size: 25px;
+   margin-bottom: 0px;
    font-family: var(--font-header);
    font-weight: var(--font-header-black);
 }
-.heros-content-head p {
-   font-family: var(--font-second-header);
-   font-weight: var(--font-header-bold);
+.heros-content > p {
+   font-size: 17px;
+   line-height: 24px;
+   font-weight: var(--font-header-semibold);
 }
-.heros-content-head p > span {
+.heros-content-head h1 {
+   font-size: 45px;
+   font-family: var(--font-second-header);
+   font-weight: var(--font-header-extrabold);
+}
+.heros-content-head h1 > span {
    color: var(--primary-color);
 }
 .pic img {
@@ -67,21 +75,21 @@
 
 /* FLoating */
 
-.floating{
+.floating {
    padding: 34px 55px;
    width: 814px;
    color: var(--primary-text);
 }
-.tab-desc{
+.tab-desc {
    margin-left: 10px;
 }
 
-.tab-desc > h1{
+.tab-desc > h1 {
    font-size: 15px;
    margin-bottom: 0px;
    font-weight: var(--font-header-bold);
 }
-.tab-desc > p{
+.tab-desc > p {
    font-size: 14px;
    margin-bottom: 0px;
 }
@@ -89,13 +97,13 @@
    height: 100%;
    position: relative;
 }
-.tab:nth-child(n+2){
+.tab:nth-child(n + 2) {
    border-left: solid 1px var(--devider-color);
 }
-.tab-image{
+.tab-image {
    background-color: var(--primary-color);
 }
-.tab-image > img{
+.tab-image > img {
    padding: 8px 7px 7px 8px;
    width: 38px;
 }
@@ -128,7 +136,7 @@
 .about-title::before,
 .team-head::after,
 .team-head::before,
-.blog-title::after, 
+.blog-title::after,
 .blog-title::before {
    position: absolute;
    content: "";
@@ -197,6 +205,8 @@
 
 .team-cap h4 {
    font-size: 17px;
+   margin-top: 5px;
+   margin-bottom: 0px;
    color: var(--primary-text);
    font-weight: var(--font-header-bold);
    font-family: var(--font-header);
@@ -257,12 +267,27 @@
 .cards:hover {
    top: -10px;
 }
-
+.arrow {
+   color: var(--primary-text);
+}
+.check {
+   width: 100%;
+   padding: 0px 225px;
+}
+.check > a {
+   text-decoration: none;
+}
+.check > a > p {
+   font-size: 20px;
+   color: var(--primary-text);
+   margin-bottom: 0px;
+   margin-right: 5px;
+}
 /* Blog */
-.blog{
+.blog {
    margin-bottom: 150px;
 }
-.blog-title{
+.blog-title {
    position: relative;
    margin-bottom: 60px;
 }
@@ -272,42 +297,42 @@
    font-weight: var(--font-header-bold);
    font-family: var(--font-header);
 }
-.blog-card-title{
+.blog-card-title {
    margin: 30px 0px 10px 0px;
 }
-.blog-card-title h1{
+.blog-card-title h1 {
    font-size: 20px;
    font-family: var(--font-second-header);
    font-weight: var(--font-header-bold);
    color: var(--primary-text);
 }
 
-.blog-card-cap{
+.blog-card-cap {
    margin-bottom: 15px;
    font-family: var(--font-tertier);
    font-size: 14px;
 }
 .author,
-.date{
+.date {
    color: var(--devider-color);
 }
-.blog-desc{
+.blog-desc {
    font-size: 14px;
    font-family: var(--font-tertier);
    color: var(--primary-text);
 }
 
-.blog-readmore{
+.blog-readmore {
    font-family: var(--font-tertier);
    margin-top: 15px;
    font-size: 14px;
 }
-.blog-readmore a{
-   color: var(--primary-text)!important;
+.blog-readmore a {
+   color: var(--primary-text) !important;
    transition: all 0.3s ease;
 }
-.blog-readmore a:hover{
-   color: var(--primary-color)!important;
+.blog-readmore a:hover {
+   color: var(--primary-color) !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -325,12 +350,32 @@
    .cards {
       margin: 0px 40px;
    }
-   .floating{
-      border-radius: 0px!important;
+   .floating {
+      border-radius: 0px !important;
       width: 100%;
    }
 }
 @media screen and (max-width: 768px) {
+   .check {
+      padding: 0px;
+   }
+   .check > a > p {
+      font-size: 15px;
+   }
+   .arrow {
+      font-size: 15px;
+   }
+   .heros-content-head h1 {
+      font-size: 37px;
+      font-family: var(--font-second-header);
+      font-weight: var(--font-header-black);
+   }
+   .heros-content-head h5 {
+      font-size: 20px;
+      margin-bottom: 0px;
+      font-family: var(--font-header);
+      font-weight: var(--font-header-black);
+   }
    .heros {
       padding: 50px !important;
       height: fit-content;
@@ -345,13 +390,13 @@
       width: 15px;
       height: 15px;
    }
-   .floating{
+   .floating {
       padding: 34px 0px;
    }
-   .tab-desc > h1{
+   .tab-desc > h1 {
       font-size: 12px;
    }
-   .tab-desc > p{
+   .tab-desc > p {
       font-size: 10px;
    }
    .about-content-wrap {
@@ -360,15 +405,25 @@
    .team-head h1 {
       font-size: 45px;
    }
-   
+
    .cards {
       margin: 0px 20px;
    }
 }
 
 @media screen and (max-width: 500px) {
-   .heros{
+   .heros {
       height: 90vh;
+   }
+   .tab:nth-child(n + 2) {
+      border-left: none;
+   }
+   .tab-image {
+      background-color: var(--primary-color);
+   }
+   .tab-image > img {
+      padding: 8px 7px 7px 8px;
+      width: 38px;
    }
    .about-title h1 {
       font-size: 35px;
@@ -379,16 +434,16 @@
    .about-content-wrap {
       padding: 0px;
    }
-   .team-head h1{
+   .team-head h1 {
       font-size: 32px;
    }
-   .team-cap h4{
+   .team-cap h4 {
       font-size: 17px;
    }
-   .team-cap h4{
+   .team-cap h4 {
       font-size: 14px;
    }
-   .blog-title h1{
+   .blog-title h1 {
       font-size: 35px;
    }
    .cards {
