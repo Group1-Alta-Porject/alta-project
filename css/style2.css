@@ -89,7 +89,7 @@ input[type="email"]:focus,#message:focus{
 
 .button-send{
     max-width: 400px;
-    padding: 10px 35px;
+    padding: 7px 30px;
     background-color:#F47522 !important;
     border: solid 1px #F47522;
     outline: none;
@@ -99,7 +99,8 @@ input[type="email"]:focus,#message:focus{
 
 .button-send p{
     font-family: "Muli";
-    margin-top: 2px;
+    font-size: 15px;
+    margin-top: 5px;
 }
 .mail-send{
     background-image: url("https://group1-alta-porject.github.io/alta-project/Assets/send-mail.png");
@@ -140,17 +141,21 @@ input[type="email"]:focus,#message:focus{
     margin-left:10px;
     margin-right: 10px;
 }
+
+form > a{
+    text-decoration: none!important;
+ }
 @media screen and (max-width: 768px) {
 
 
     .button-send{
         width: fit-content;
-        padding: 10px 20px;
+        padding: 7px 20px;
         transition: all 0.5s ease;
     }
     
     .button-send p{
-        font-size: 14px;
+        font-size: 13px;
         font-family: "Muli";
         margin-top: 2px;
     }
