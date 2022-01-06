@@ -447,7 +447,14 @@
    }
    .tab-image > img {
       padding: 8px 7px 7px 8px;
-      width: 38px;
+      width: 33px;
+   }
+   .tab-desc > h1 {
+      font-size: 11px;
+   }
+   .tab-desc > p {
+      margin-top: 2px;
+      font-size: 9px;
    }
    .about-title h1 {
       font-size: 32px;
