@@ -11,6 +11,7 @@
    --font-header-extrabold: 800;
    --font-header-black: 900;
 }
+   
 /* Hero */
 .heros {
    padding: 0px 140px;
@@ -79,11 +80,11 @@
    padding: 34px 55px;
    width: 814px;
    color: var(--primary-text);
+   transition: all 0.5s ease;
 }
 .tab-desc {
    margin-left: 10px;
-}
-
+}  
 .tab-desc > h1 {
    font-size: 15px;
    margin-bottom: 0px;
@@ -186,7 +187,19 @@
 }
 
 /* Team */
+.ornament{
+
+   position: absolute;
+   top: 30px;
+   left: 0;
+   z-index: -1;
+}
+.ornament img{
+   transition: all 0.5s ease;
+   width: 200px;
+}
 .team {
+   position: relative;
    padding-top: 60px;
    margin-bottom: 60px;
 }
@@ -261,12 +274,19 @@
    height: 100%;
    border: solid 10px var(--primary-text);
 }
-.cards:hover .card-pic {
+
+.cards:nth-child(even){
+   top: -30px;
+}
+.cards:nth-child(even) .card-pic{
    box-shadow: 0px 0px 10px 1px rgb(160, 160, 160);
+}
+
+/* .cards:hover .card-pic {
 }
 .cards:hover {
    top: -10px;
-}
+} */
 .arrow {
    color: var(--primary-text);
 }
@@ -338,6 +358,12 @@
 @media screen and (max-width: 1200px) {
    .heros {
       padding: 0px 100px;
+   }
+   .cards:nth-child(even){
+      top: 0px;
+   }
+   .cards:nth-child(even) .card-pic{
+      box-shadow: none;
    }
 }
 @media screen and (max-width: 992px) {
@@ -431,6 +457,9 @@
    }
    .about-content-wrap {
       padding: 0px;
+   }
+   .ornament img{
+      width: 150px;
    }
    .team-head h1 {
       font-size: 32px;
