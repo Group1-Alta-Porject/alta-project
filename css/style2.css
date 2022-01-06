@@ -6,7 +6,7 @@ h1{
     margin-bottom: 50px;
 
 }
-span{
+h1>span{
     color:#19345E;
     font-weight: 700; 
 }
@@ -179,3 +179,4 @@ form > a{
         font-size: 30px;
     }
 }
+
