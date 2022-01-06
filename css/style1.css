@@ -102,10 +102,10 @@ li> img {
 .full {
    width: fit-content;
 }
-.photo{
+.photo,.photo2{
     width: fit-content;
 }
-.photo > img{
+.photo > img, .photo2 > img{
     width: 320px;
 }
 
@@ -127,6 +127,7 @@ li> img {
    border: 12px solid #19345e;
    position: absolute;
    bottom: -35px;
+   left: -35px;
 }
 
 .photo,
@@ -149,10 +150,10 @@ li > img {
       width: fit-content;
       margin: 0px auto;
    }
-   .photo {
+   .photo, .photo2 {
       width: 300px;
    }
-   .photo > img {
+   .photo > img, .photo2 > img {
       max-width: 300px;
    }
    .profile{
