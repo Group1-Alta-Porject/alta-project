@@ -175,4 +175,7 @@ form > a{
     .all{
         padding: 20px;
     }
+    .getInTouch{
+        font-size: 30px;
+    }
 }
