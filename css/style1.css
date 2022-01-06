@@ -6,7 +6,7 @@
 }
 main::before {
    content: "";
-   background-image: url("ASSETS/ornament_batik.png");
+   background-image: url("https://group1-alta-porject.github.io/alta-project/Assets/ornament_batik.png");
    background-size: 175px;
    display: block;
    position: absolute;
