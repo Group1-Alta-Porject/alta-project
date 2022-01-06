@@ -44,7 +44,7 @@ span{
     margin-bottom: 40px;
 }
 .input{
-   margin-left: -30px;
+   margin-left: 0px;
 }
 label{
     font-family: "Muli";
@@ -84,15 +84,35 @@ button{
     border:none !important;
     border-radius: 30px !important;
     box-shadow: 2px 5px 8px #00000029, -2px -8px 15px #00000029!important;
+    height: auto;
+    width:auto;
+    max-width: 200px;
+    max-height: 200px;
+    
+}
+button:hover{
+    background-color: beige !important;
+    color: #F47522 !important;
+    display:inline;
+    
+}
+.img-hover{
+    height:20px;
+    width:20px;
+   
+    right:5px;
+}
+
+.img-non-hover{   
+    height:20px;
+    width:20px;  
+    right:3px;
+    position:relative;
+    display:none;
+    
+}
+.button-text{
     display:inline-block !important;
-    
-}
-button:focus{
-    box-shadow: none!important;
-    
-}
-button>img{
-    float:left !important;
-    height:5px;
-    width:7px;
+    margin-left:10px;
+    margin-right: 10px;
 }
