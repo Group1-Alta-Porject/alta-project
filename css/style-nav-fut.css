@@ -11,12 +11,15 @@
    display: block;
    margin-top: 2px;
    font-weight: var(--font-header-bold);
+   color: var(--primary-color);
+   transition: all 0.5s ease;
 }
 .burger{
    color: var(--primary-color);
 }
 nav {
-   padding: 0px 150px !important;
+   box-sizing: border-box;
+   padding: 0px 150px!important;
    background-color: white;
    font-family: var(--font-header);
 }
@@ -37,21 +40,26 @@ nav {
 .lists:hover {
    color: var(--primary-color) !important;
 }
-ul > li > a {
-   text-decoration: none;
+.lists {
+   text-decoration: none!important;
 }
-ul > li {
-   list-style: none;
+.lists-p{
+   list-style: none!important;
 }
+
 .tombol {
-   background-color: white;
-   color: var(--primary-color);
-   outline: solid 1px var(--primary-color);
+   background-color: white!important;
+   color: var(--primary-color)!important;
+   outline: solid 1px var(--primary-color)!important;
    border: none;
+   box-shadow: none!important;
    transition: all 0.5s ease;
 }
 .tombol:hover {
-   background-color: var(--primary-color);
+   background-color: var(--primary-color)!important;
+   color: white;
+}
+.tombol:hover .paragraf{
    color: white;
 }
 .dropdown-item:hover {
@@ -68,5 +76,5 @@ footer {
 }
 .sns-logos > a > img {
    height: 20px;
-   margin: 5px 5px 0px 0px;
+   margin: 5px 5px 0px 0px !important;
 }

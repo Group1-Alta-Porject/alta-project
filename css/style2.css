@@ -10,12 +10,12 @@ span{
     color:#19345E;
     font-weight: 700; 
 }
-img{
+.all img{
     display: inline-block;
     height: auto;
     width: auto;
-    max-height: 30px;
-    max-width: 30px;
+    max-height: 30px!important;
+    max-width: 30px!important;
 }
 .col-4{
     padding-right: 0px;
